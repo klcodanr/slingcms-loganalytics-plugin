@@ -37,6 +37,105 @@ Reports can be found at Tools > Log Analytics. To view a report, click on the re
 
 ![Reports Console](docs/View-Reports.png)
 
+### Filters
+
+Each report has a global filter, which can be pre-populated based on [Filtrex expressions](https://github.com/joewalnes/filtrex) against the following variables:
+
+  - time
+ - responseTime
+ - responseSize
+ - status
+ - refererPath
+ - refererHost
+ - language
+ - method
+ - path
+ - protocol
+ - host
+ - userAgent
+ - contentType
+ - user
+ - sessionId
+ - referer
+ - platform
+ - remoteHost
+ - queryString
+ - postalCode
+ - regionCode
+ - countryCode
+ - forwardedFor
+ - browser
+ - browserType
+ - browserMajorVersion
+ - deviceType
+ - platformVersion
+ - resolvedPath
+ - resolvedIp
+
+To filter the requests for the report, for example:
+
+	{
+	"time": 1594422239000,
+	"responseTime": 2,
+	"responseSize": 0,
+	"status": 200,
+	"refererPath": "",
+	"refererHost": "",
+	"language": "en-US",
+	"method": "GET",
+	"path": "/static/clientlibs/sling-cms/js/wysihtml.toolbar.min.map",
+	"protocol": "HTTP/1.1",
+	"host": "localhost:8080",
+	"userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36",
+	"contentType": "application/json;charset=UTF-8",
+	"user": "admin",
+	"sessionId": "node0rs0lrzicp3901q4ov5v3cst8y0.node0",
+	"referer": "-",
+	"platform": "macOS",
+	"remoteHost": "0:0:0:0:0:0:0:1",
+	"queryString": "",
+	"postalCode": "",
+	"regionCode": "",
+	"countryCode": "",
+	"forwardedFor": "-",
+	"browser": "Chrome",
+	"browserType": "Browser",
+	"browserMajorVersion": "83",
+	"deviceType": "Desktop",
+	"platformVersion": "10.14",
+	"resolvedPath": "/static/clientlibs/sling-cms/js/wysihtml.toolbar.min.map",
+	"resolvedIp": "0:0:0:0:0:0:0:1"
+	}
+
+Each report item also has a filter which can be set to limit the requests for that report. All filters can be defaulted in the edit mode and overriden / changed when viewing the report.
+
+### Report Visualizations
+
+There are four report visualizations which can be added and configured in the report:
+
+#### Timeseries
+
+Displays requests over time.
+
+![TimeSeries Report](docs/Timeseries.png)
+
+#### Grouped Table
+
+Shows the number of requests per a value of one or more fields.
+
+![Grouped Table](docs/Grouped-Table.png)
+
+#### Pie Chart
+
+Shows the percentage of requests per a value of one or more fields.
+
+![Pie Chart](docs/Pie-Chart.png)
+
+#### Bar Chart
+
+Shows the percentage of requests per a value of one or more fields.
+
+![Bar Chart](docs/Bar-Chart.png)
 
 ## Building
 
