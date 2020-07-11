@@ -1,0 +1,26 @@
+ {
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "sling-cms/components/editor/slingform",
+    "button": "Save Report Column",
+    "fields": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "sling-cms/components/general/container",
+        "columns": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "sling-cms/components/editor/fields/select",
+            "label": "Columns",
+            "name": "columns",
+            "required": true,
+            "options": {
+                "MOVE": {
+                    "label": "One Column",
+                    "value": "1"
+                },
+                "PUBLISH": {
+                    "label": "Two Columns",
+                    "value": "2"
+                }
+            }
+        }
+    }
+}

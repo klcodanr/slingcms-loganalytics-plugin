@@ -1,0 +1,5 @@
+{
+    "jcr:primaryType": "sling:Component",
+    "jcr:title": "LogAnalytics - Page",
+    "sling:resourceSuperType": "sling-cms/components/pages/base"
+}

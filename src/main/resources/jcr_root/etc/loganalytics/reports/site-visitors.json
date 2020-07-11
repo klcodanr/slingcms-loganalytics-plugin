@@ -1,0 +1,190 @@
+{
+    "jcr:primaryType": "sling:Page",
+    "jcr:content": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:title": "Site Visitors",
+        "sling:resourceType": "com-danklco/loganalytics/components/report",
+        "filter": {
+            "jcr:primaryType": "nt:unstructured",
+            "defaultFilter": "browserType==\"Browser\" and contentType==\"text/html\" and user!=\"admin\""
+        },
+        "report": {
+            "jcr:primaryType": "nt:unstructured",
+            "timeseries": {
+                "jcr:primaryType": "nt:unstructured",
+                "title": "Site Views (By Hour)",
+                "sling:resourceType": "com-danklco/loganalytics/components/timeseries",
+                "roundTo": "hour",
+                "divisor": "12",
+                "displayFormat": "ddd hh:mm"
+            },
+            "grouped_table": {
+                "jcr:primaryType": "nt:unstructured",
+                "direction": "desc",
+                "field": "path",
+                "limit": "200",
+                "title": "Top Requests",
+                "fieldTitle": "Path",
+                "sling:resourceType": "com-danklco/loganalytics/components/grouped-table"
+            },
+            "reportcol": {
+                "jcr:primaryType": "nt:unstructured",
+                "columns": "2",
+                "sling:resourceType": "com-danklco/loganalytics/components/reportcol",
+                "col": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "grouped_table": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "direction": "desc",
+                        "field": "refererHost",
+                        "limit": "200",
+                        "title": "Referers",
+                        "fieldTitle": "Referer Hosts",
+                        "defaultFilter": "refererHost != \"\"",
+                        "sling:resourceType": "com-danklco/loganalytics/components/grouped-table"
+                    }
+                },
+                "col-1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "piechart": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "field": "refererHost",
+                        "title": "Referer Hosts",
+                        "defaultFilter": "refererHost != \"\"",
+                        "sling:resourceType": "com-danklco/loganalytics/components/piechart",
+                        "otherCutoff": "2"
+                    }
+                }
+            },
+            "reportcol_1": {
+                "jcr:primaryType": "nt:unstructured",
+                "columns": "2",
+                "sling:resourceType": "com-danklco/loganalytics/components/reportcol",
+                "col": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "grouped_table": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "direction": "desc",
+                        "field": "browser+browserMajorVersion",
+                        "limit": "200",
+                        "title": "Browser Versions",
+                        "fieldTitle": "Browser Version",
+                        "sling:resourceType": "com-danklco/loganalytics/components/grouped-table"
+                    }
+                },
+                "col-1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "piechart": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "field": "browser",
+                        "title": "Browser",
+                        "sling:resourceType": "com-danklco/loganalytics/components/piechart",
+                        "otherCutoff": "2"
+                    }
+                }
+            },
+            "reportcol_2": {
+                "jcr:primaryType": "nt:unstructured",
+                "columns": "2",
+                "sling:resourceType": "com-danklco/loganalytics/components/reportcol",
+                "col": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "piechart": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "field": "deviceType",
+                        "title": "Device Type",
+                        "sling:resourceType": "com-danklco/loganalytics/components/piechart",
+                        "otherCutoff": "2"
+                    }
+                },
+                "col-1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "piechart": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "field": "platform",
+                        "title": "Platforms",
+                        "sling:resourceType": "com-danklco/loganalytics/components/piechart",
+                        "otherCutoff": "2"
+                    }
+                }
+            },
+            "reportcol_3": {
+                "jcr:primaryType": "nt:unstructured",
+                "columns": "2",
+                "sling:resourceType": "com-danklco/loganalytics/components/reportcol",
+                "col": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "piechart": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "field": "countryCode",
+                        "title": "Country",
+                        "sling:resourceType": "com-danklco/loganalytics/components/piechart",
+                        "otherCutoff": "2"
+                    }
+                },
+                "col-1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "barchart": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "field": "countryCode+regionCode",
+                        "limit": "20",
+                        "title": "Country / Region",
+                        "sling:resourceType": "com-danklco/loganalytics/components/barchart"
+                    }
+                }
+            },
+            "reportcol_4": {
+                "jcr:primaryType": "nt:unstructured",
+                "columns": "2",
+                "sling:resourceType": "com-danklco/loganalytics/components/reportcol",
+                "col": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "piechart": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "field": "language",
+                        "title": "Language",
+                        "sling:resourceType": "com-danklco/loganalytics/components/piechart",
+                        "otherCutoff": "2"
+                    }
+                },
+                "col-1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "grouped_table": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "direction": "desc",
+                        "field": "countryCode+regionCode",
+                        "limit": "200",
+                        "title": "Country / Region",
+                        "fieldTitle": "Country / Region",
+                        "sling:resourceType": "com-danklco/loganalytics/components/grouped-table"
+                    }
+                }
+            },
+            "reportcol_5": {
+                "jcr:primaryType": "nt:unstructured",
+                "columns": "2",
+                "sling:resourceType": "com-danklco/loganalytics/components/reportcol",
+                "col": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "piechart": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "field": "method",
+                        "title": "Method",
+                        "sling:resourceType": "com-danklco/loganalytics/components/piechart",
+                        "otherCutoff": "0"
+                    }
+                },
+                "col-1": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "piechart": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "field": "status",
+                        "title": "Status Code",
+                        "sling:resourceType": "com-danklco/loganalytics/components/piechart",
+                        "otherCutoff": "0"
+                    }
+                }
+            }
+        }
+    }
+}

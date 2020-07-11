@@ -1,0 +1,27 @@
+{
+    "jcr:primaryType": "sling:Page",
+    "jcr:content": {
+        "sling:resourceType": "com-danklco/loganalytics/components/page",
+        "jcr:title": "Edit Report",
+        "jcr:primaryType": "nt:unstructured",
+        "container": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "sling-cms/components/general/container",
+            "richtext": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "sling-cms/components/general/richtext",
+                "text": "<h2>Edit Report</h2>"
+            },
+            "contentbreadcrumb": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "sling-cms/components/cms/contentbreadcrumb",
+                "depth": 2,
+                "rootTitle": "Reports"
+            },
+            "editreport": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "com-danklco/loganalytics/components/edit"
+            }
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "jcr:primaryType": "sling:Page",
+    "jcr:content": {
+        "sling:resourceType": "com-danklco/loganalytics/components/page",
+        "jcr:title": "View Report",
+        "jcr:primaryType": "nt:unstructured",
+        "container": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "sling-cms/components/general/container",
+            "richtext": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "sling-cms/components/general/richtext",
+                "text": "<h2>View Report</h2>"
+            },
+            "contentbreadcrumb": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "sling-cms/components/cms/contentbreadcrumb",
+                "depth": 2,
+                "hideSearch": true,
+                "rootTitle": "Reports"
+            },
+            "view": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "com-danklco/loganalytics/components/view"
+            }
+        }
+    }
+}

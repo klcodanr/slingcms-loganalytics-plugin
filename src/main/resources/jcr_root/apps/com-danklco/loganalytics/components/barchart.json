@@ -1,0 +1,6 @@
+{
+    "jcr:primaryType": "sling:Component",
+    "jcr:title": "LogAnalytics - Bar Chart",
+    "sling:resourceSuperType": "com-danklco/loganalytics/components/base",
+    "componentType": "LogAnalytics"
+}

@@ -1,0 +1,11 @@
+{
+    "jcr:primaryType": "nt:unstructured",
+    "alternatives": [
+        "/cms/loganalytics"
+    ],
+    "link": "/cms/loganalytics/list.html/etc/loganalytics/reports",
+    "text": "Log Analytics",
+    "enabledGroups": [
+        "administrators"
+    ]
+}

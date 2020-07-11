@@ -1,0 +1,114 @@
+{
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "sling-cms/components/editor/slingform",
+    "button": "Save Bar Chart",
+    "fields": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "sling-cms/components/general/container",
+        "title": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "sling-cms/components/editor/fields/text",
+            "label": "Title",
+            "name": "title",
+            "required": true
+        },
+        "field": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "sling-cms/components/editor/fields/select",
+            "label": "Field",
+            "name": "field",
+            "required": true,
+            "options": {
+                "browser": {
+                    "label": "Browser",
+                    "value": "browser"
+                },
+                "browserType": {
+                    "label": "Browser Type",
+                    "value": "browserType"
+                },
+                "browserMajorVersion": {
+                    "label": "Browser Version",
+                    "value": "browser+browserMajorVersion"
+                },
+                "contentType": {
+                    "label": "Content Type",
+                    "value": "contentType"
+                },
+                "deviceType": {
+                    "label": "Device Type",
+                    "value": "deviceType"
+                },
+                "geoCountry": {
+                    "label": "Country",
+                    "value": "countryCode"
+                },
+                "geoPostal": {
+                    "label": "Postal Code",
+                    "value": "postalCode"
+                },
+                "geoRegion": {
+                    "label": "Region / Country Code",
+                    "value": "countryCode+regionCode"
+                },
+                "host": {
+                    "label": "Host",
+                    "value": "host"
+                },
+                "language": {
+                    "label": "Language",
+                    "value": "language"
+                },
+                "method": {
+                    "label": "Method",
+                    "value": "method"
+                },
+                "path": {
+                    "label": "Path",
+                    "value": "path"
+                },
+                "platform": {
+                    "label": "Platform",
+                    "value": "platform"
+                },
+                "platformVersion": {
+                    "label": "Platform Version",
+                    "value": "platform+platformVersion"
+                },
+                "protocol": {
+                    "label": "Protocol",
+                    "value": "protocol"
+                },
+                "queryString": {
+                    "label": "Query String",
+                    "value": "path+queryString"
+                },
+                "refererHost": {
+                    "label": "Referer Host",
+                    "value": "refererHost"
+                },
+                "status": {
+                    "label": "Status",
+                    "value": "status"
+                },
+                "user": {
+                    "label": "User",
+                    "value": "user"
+                }
+            }
+        },
+        "limit": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "sling-cms/components/editor/fields/text",
+            "label": "Limit",
+            "name": "limit",
+            "type": "num"
+        },
+        "defaultFilter": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "sling-cms/components/editor/fields/text",
+            "label": "Default Filter",
+            "name": "defaultFilter"
+        }
+    }
+}

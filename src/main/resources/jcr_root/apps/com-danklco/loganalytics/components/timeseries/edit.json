@@ -1,0 +1,55 @@
+{
+    "jcr:primaryType": "nt:unstructured",
+    "sling:resourceType": "sling-cms/components/editor/slingform",
+    "button": "Save Report Column",
+    "fields": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "sling-cms/components/general/container",
+        "title": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "sling-cms/components/editor/fields/text",
+            "label": "Title",
+            "name": "title",
+            "required": true
+        },
+        "divisor": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "sling-cms/components/editor/fields/text",
+            "label": "Divisor",
+            "name": "divisor",
+            "type": "num"
+        },
+        "roundTo": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "sling-cms/components/editor/fields/select",
+            "label": "Round To",
+            "name": "roundTo",
+            "options": {
+                "day": {
+                    "label": "Day",
+                    "value": "day"
+                },
+                "hour": {
+                    "label": "Hour",
+                    "value": "hour"
+                },
+                "minute": {
+                    "label": "Minute",
+                    "value": "minute"
+                }
+            }
+        },
+        "displayFormat": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "sling-cms/components/editor/fields/text",
+            "label": "Display Format",
+            "name": "displayFormat"
+        },
+        "defaultFilter": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "sling-cms/components/editor/fields/text",
+            "label": "Default Filter",
+            "name": "defaultFilter"
+        }
+    }
+}
