@@ -16,10 +16,6 @@
  */
 const gulp = require("gulp");
 const concat = require("gulp-concat");
-const download = require("gulp-download");
-const merge = require("merge-stream");
-
-const FILTREX_URL = "https://rawgit.com/joewalnes/filtrex/master/filtrex.js";
 
 gulp.task("css", function () {
   return gulp
@@ -36,12 +32,12 @@ gulp.task("css", function () {
 });
 
 gulp.task("js", function () {
-  return merge(gulp
+  return gulp
     .src([
       "./node_modules/moment/min/moment-with-locales.min.js",
       "./node_modules/chartist/dist/chartist.min.js",
       "./src/main/frontend/js/analytics.js",
-    ]))
+    ])
     .pipe(concat("analytics.js"))
     .pipe(
       gulp.dest(

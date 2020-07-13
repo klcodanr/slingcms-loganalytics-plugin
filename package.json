@@ -2,18 +2,17 @@
     "name": "com-danklco-loganalytics-front-end",
     "version": "1.0.0",
     "description": "Scripts and Styles for com-danklco/loganalytics",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/klcodanr/slingcms-loganalytics-plugin.git"
+    },
     "dependencies": {
         "chartist": "^0.11.4",
-        "filtrex": "^2.0.0",
         "moment": "^2.26.0"
     },
     "devDependencies": {
         "gulp": "^4.0.1",
-        "gulp-clean-css": "^4.3.0",
-        "gulp-concat": "^2.6.1",
-        "gulp-download": "0.0.1",
-        "gulp-terser": "^1.2.0",
-        "merge-stream": "^2.0.0"
+        "gulp-concat": "^2.6.1"
     },
     "license": "Apache-2.0"
 }
