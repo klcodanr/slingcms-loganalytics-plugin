@@ -116,7 +116,7 @@ public class LogLineTest {
     public void testPeek() throws InstantiationException {
         String line = "18.05.2020 16:28:14.968 *INFO* [qtp1531478398-44] log.fullrequest ␝18/May/2020:16:28:14 +0000␝␝␝127.0.0.1␝2600:2b00:822d:6900:7408:a015:d647:7b85, 162.158.187.118␝Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36␝en-US,en;q=0.9␝admin␝-␝https://cms.danklco.com/system/console/slinglog␝HTTP/1.1␝GET␝localhost:8080␝/system/sling/form/login␝?resource=%2Fsystem%2Fconsole%2Fslinglog%2Ftailer.txt␝2␝3068␝/system/sling/form/login␝text/html␝200";
         try {
-            assertEquals(1589819294000L, LogLineImpl.parse(line,null).getTime());
+            assertEquals(1589819294000L, LogLineImpl.parse(line,null).getTime().getTime());
         } catch (InstantiationException ie) {
             assertEquals("Parsed an incorrect number of fields: 21", ie.getMessage());
         }

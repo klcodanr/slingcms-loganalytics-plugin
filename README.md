@@ -14,9 +14,9 @@
  * limitations under the License.
  -->
 
-[![CircleCI](https://circleci.com/gh/klcodanr/slingcms-twitter-plugin.svg?style=svg)](https://circleci.com/gh/klcodanr/slingcms-loganalytics-plugin)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=slingcms-twitter-plugin&metric=alert_status)](https://sonarcloud.io/dashboard?id=slingcms-loganalytics-plugin)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/4cdb00981b134862977f5752ab1b66b4)](https://www.codacy.com/manual/klcodanr/slingcms-twitter-plugin?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=klcodanr/slingcms-loganalytics-plugin&amp;utm_campaign=Badge_Grade)
+[![CircleCI](https://circleci.com/gh/klcodanr/slingcms-loganalytics-plugin.svg?style=svg)](https://circleci.com/gh/klcodanr/slingcms-loganalytics-plugin)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=slingcms-loganalytics-plugin&metric=alert_status)](https://sonarcloud.io/dashboard?id=slingcms-loganalytics-plugin)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/18ff3b2fb86045c7b8fdf1fa17dc5e4c)](https://www.codacy.com/manual/klcodanr/slingcms-loganalytics-plugin?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=klcodanr/slingcms-loganalytics-plugin&amp;utm_campaign=Badge_Grade)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 # Apache Sling CMS - Log Analytics Plugin
