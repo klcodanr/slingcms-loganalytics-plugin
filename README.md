@@ -19,7 +19,7 @@
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/18ff3b2fb86045c7b8fdf1fa17dc5e4c)](https://www.codacy.com/manual/klcodanr/slingcms-loganalytics-plugin?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=klcodanr/slingcms-loganalytics-plugin&amp;utm_campaign=Badge_Grade)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
-# Apache Sling CMS - Log Analytics Plugin
+# Apache Sling CMS- Log Analytics Plugin
 
 A plugin to enable basic analytics via log reading in the
 [Apache Sling CMS](https://github.com/apache/org-apache-sling-app-cms).
@@ -41,36 +41,36 @@ Reports can be found at Tools > Log Analytics. To view a report, click on the re
 
 Each report has a global filter, which can be pre-populated based on [Filtrex expressions](https://github.com/joewalnes/filtrex) against the following variables:
 
-  - time
- - responseTime
- - responseSize
- - status
- - refererPath
- - refererHost
- - language
- - method
- - path
- - protocol
- - host
- - userAgent
- - contentType
- - user
- - sessionId
- - referer
- - platform
- - remoteHost
- - queryString
- - postalCode
- - regionCode
- - countryCode
- - forwardedFor
- - browser
- - browserType
- - browserMajorVersion
- - deviceType
- - platformVersion
- - resolvedPath
- - resolvedIp
+- time
+- responseTime
+- responseSize
+- status
+- refererPath
+- refererHost
+- language
+- method
+- path
+- protocol
+- host
+- userAgent
+- contentType
+- user
+- sessionId
+- referer
+- platform
+- remoteHost
+- queryString
+- postalCode
+- regionCode
+- countryCode
+- forwardedFor
+- browser
+- browserType
+- browserMajorVersion
+- deviceType
+- platformVersion
+- resolvedPath
+- resolvedIp
 
 To filter the requests for the report, for example:
 
