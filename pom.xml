@@ -200,7 +200,7 @@ implied. * See the License for the specific language governing permissions and *
             <configuration>
               <bnd>
                 <![CDATA[
-Sling-Initial-Content: jcr_root/apps/com-danklco/loganalytics;overwrite=true;uninstall:=true;ignoreImportProviders:=xml;path:=/apps/com-danklco/loganalytics,jcr_root/apps/sling-cms/content/loganalytics;overwrite:=true;uninstall:=true;path:=/apps/sling-cms/content/loganalytics,jcr_root/apps/sling-cms/content/start/jcr%3Acontent/nav/toolsnav/links;path:=/apps/sling-cms/content/start/jcr:content/nav/toolsnav/links,jcr_root/etc/loganalytics;overwrite:=false;uninstall:=false;path:=/etc/loganalytics,jcr_root/static/clientlibs/com-danklco/loganalytics/;overwrite:=true;uninstall:=true;path:=/static/clientlibs/com-danklco/loganalytics/
+Sling-Initial-Content: jcr_root/apps/com-danklco/loganalytics;overwrite=true;uninstall:=true;ignoreImportProviders:=xml;path:=/apps/com-danklco/loganalytics,jcr_root/apps/sling-cms/content/loganalytics;overwrite:=true;uninstall:=true;path:=/apps/sling-cms/content/loganalytics,jcr_root/etc/loganalytics;overwrite:=false;uninstall:=false;path:=/etc/loganalytics,jcr_root/static/clientlibs/com-danklco/loganalytics/;overwrite:=true;uninstall:=true;path:=/static/clientlibs/com-danklco/loganalytics/
 # see https://issues.apache.org/jira/browse/SLING-8980
 -snapshot: SNAPSHOT
 -includeresource: target/dist,browscap-java-[0-9.]*.jar;lib:=true,geoip2-[0-9.]*.jar;lib:=true,maxmind-db-[0-9.]*.jar;lib:=true
