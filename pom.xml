@@ -7,7 +7,7 @@ implied. * See the License for the specific language governing permissions and *
 
   <groupId>com.danklco</groupId>
   <artifactId>com.danklco.slingcms.plugins.loganalytics</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0</version>
   <name>com-danklco/loganalytics</name>
   <description>com-danklco/loganalytics Sling CMS Project</description>
 
@@ -37,7 +37,7 @@ implied. * See the License for the specific language governing permissions and *
     <url>git@github.com:klcodanr/slingcms-loganalytics-plugin.git</url>
     <developerConnection>scm:git:git@github.com:klcodanr/slingcms-loganalytics-plugin.git</developerConnection>
     <connection>scm:git:git@github.com:klcodanr/slingcms-loganalytics-plugin.git</connection>
-    <tag>HEAD</tag>
+    <tag>com.danklco.slingcms.plugins.loganalytics-1.0</tag>
   </scm>
 
   <licenses>
