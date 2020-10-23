@@ -4,12 +4,13 @@ http://www.apache.org/licenses/LICENSE-2.0 * * Unless required by applicable law
 implied. * See the License for the specific language governing permissions and * limitations under the License. -->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
   <groupId>com.danklco</groupId>
   <artifactId>com.danklco.slingcms.plugins.loganalytics</artifactId>
-  <version>1.1-SNAPSHOT</version>
-  <name>com-danklco/loganalytics</name>
-  <description>com-danklco/loganalytics Sling CMS Project</description>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>bundle</packaging>
+  <name>Apache Sling CMS Log Analytics Plugin</name>
+  <description>An Apache Sling CMS plugin to use log files for basic analytics reporting</description>
+<url>https://github.com/klcodanr/slingcms-loganalytics-plugin</url>
 
   <properties>
     <!-- Use UTF-8 -->
@@ -47,6 +48,13 @@ implied. * See the License for the specific language governing permissions and *
       <distribution>repo</distribution>
     </license>
   </licenses>
+
+  <scm>
+    <url>git@github.com:klcodanr/slingcms-loganalytics-plugin.git</url>
+    <developerConnection>scm:git:git@github.com:klcodanr/slingcms-loganalytics-plugin.git</developerConnection>
+    <connection>scm:git:git@github.com:klcodanr/slingcms-loganalytics-plugin.git</connection>
+    <tag>HEAD</tag>
+  </scm>
 
   <developers>
     <developer>
@@ -418,13 +426,19 @@ Sling-Initial-Content: jcr_root/apps/com-danklco/loganalytics;overwrite=true;uni
         <plugins>
           <plugin>
             <groupId>org.apache.sling</groupId>
-            <artifactId>sling-maven-plugin</artifactId>
+            <artifactId>maven-sling-plugin</artifactId>
+            <version>2.4.2</version>
             <executions>
               <execution>
                 <id>install-bundle</id>
                 <goals>
                   <goal>install</goal>
                 </goals>
+                <configuration>
+                  <slingUrl>${sling.protocol}://${sling.host}:${sling.port}/system/console</slingUrl>
+                  <user>${sling.username}</user>
+                  <password>${sling.password}</password>
+                </configuration>
               </execution>
             </executions>
           </plugin>
@@ -432,5 +446,4 @@ Sling-Initial-Content: jcr_root/apps/com-danklco/loganalytics;overwrite=true;uni
       </build>
     </profile>
   </profiles>
-
 </project>
