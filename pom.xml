@@ -7,10 +7,9 @@ implied. * See the License for the specific language governing permissions and *
   <groupId>com.danklco</groupId>
   <artifactId>com.danklco.slingcms.plugins.loganalytics</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <packaging>bundle</packaging>
   <name>Apache Sling CMS Log Analytics Plugin</name>
   <description>An Apache Sling CMS plugin to use log files for basic analytics reporting</description>
-<url>https://github.com/klcodanr/slingcms-loganalytics-plugin</url>
+  <url>https://github.com/klcodanr/slingcms-loganalytics-plugin</url>
 
   <properties>
     <!-- Use UTF-8 -->
@@ -33,13 +32,6 @@ implied. * See the License for the specific language governing permissions and *
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     <sonar.login>0846a6a2074d6833c69b61f7da98c466a8391093</sonar.login>
   </properties>
-
-  <scm>
-    <url>git@github.com:klcodanr/slingcms-loganalytics-plugin.git</url>
-    <developerConnection>scm:git:git@github.com:klcodanr/slingcms-loganalytics-plugin.git</developerConnection>
-    <connection>scm:git:git@github.com:klcodanr/slingcms-loganalytics-plugin.git</connection>
-    <tag>HEAD</tag>
-  </scm>
 
   <licenses>
     <license>
