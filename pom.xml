@@ -395,7 +395,7 @@ Sling-Initial-Content: jcr_root/apps/com-danklco/loganalytics;overwrite=true;uni
     </dependency>
     <dependency>
       <artifactId>commons-compress</artifactId>
-      <version>1.19</version>
+      <version>1.21</version>
       <groupId>org.apache.commons</groupId>
       <scope>provided</scope>
     </dependency>
