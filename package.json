@@ -8,7 +8,7 @@
     },
     "dependencies": {
         "chartist": "^0.11.4",
-        "moment": "^2.26.0"
+        "moment": "^2.29.2"
     },
     "devDependencies": {
         "gulp": "^4.0.1",
