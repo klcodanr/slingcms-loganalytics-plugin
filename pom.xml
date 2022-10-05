@@ -372,7 +372,7 @@ Sling-Initial-Content: jcr_root/apps/com-danklco/loganalytics;overwrite=true;uni
     <dependency>
       <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>2.9.10.5</version>
+      <version>2.12.6.1</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
